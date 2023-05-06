@@ -41,7 +41,6 @@ class ViewUsers_Model extends Model {
             $sql.= " LIKE N'%$name%' ";
         }
         $sql.= " ORDER BY {$sort_sql}";
-        echo $sql;
         $result = $this->DataBase->query($sql);
         return $result;
 
